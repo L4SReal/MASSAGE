@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Dark Rounded Icon Badge -->
+  <rect width="100" height="100" rx="18" fill="#121214"/>
+  <rect x="2" y="2" width="96" height="96" rx="16" stroke="#c5a059" stroke-width="2.5" fill="none"/>
+  
+  <!-- Stylized Geometric L4S Monogram -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- L -->
+    <path d="M22 26v46h20" stroke="#fcfbf8" stroke-width="6.5" />
+    
+    <!-- 4 -->
+    <path d="M52 26l-15 30h24" stroke="#c5a059" stroke-width="5.5" />
+    <path d="M54 34v38" stroke="#c5a059" stroke-width="5.5" />
+    
+    <!-- S -->
+    <path d="M80 30h-14a6 6 0 0 0-6 6v3a6 6 0 0 0 6 6h8a6 6 0 0 1 6 6v7a6 6 0 0 1-6 6h-16" stroke="#fcfbf8" stroke-width="5.5" />
+  </g>
+</svg>

@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-primary: #4a3728;
+  --color-charcoal: #1c1917;
+  --color-taupe: #78716c;
+  --color-accent: #c5a059;
+  --color-gold: #c5a059;
+  --color-gold-light: #dfc28d;
+  --color-amber: #f5d17e;
+  --color-bg: #fffaf0;
+  --color-cream: #fffaf0;
+  --color-cream-soft: #f7f3ea;
+  --color-line: #e9dcc9;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #fffaf0;
+    color: #4a3728;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, serif;
+    color: #4a3728;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Crisp Luxury Editorial Spa Cards (Clean, architectural, matches menu button aesthetics) */
+.spa-card, .sharp-card, .editorial-card {
+  background: #ffffff;
+  border: 1px solid rgba(233, 220, 201, 0.95);
+  border-radius: 0px; /* Crisp, architectural, zero bubble slop */
+  box-shadow: 0 1px 3px rgba(74, 55, 40, 0.04);
+  transition: all 0.25s ease;
+}
+
+.spa-card:hover, .sharp-card:hover, .editorial-card:hover {
+  border-color: #c5a059;
+  box-shadow: 0 6px 18px rgba(74, 55, 40, 0.08);
+}
+
+/* Crisp Architectural Spa Icon Frames (Matches menu button geometry) */
+.spa-icon-box {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid #e9dcc9;
+  background-color: #ffffff;
+  color: #4a3728;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.spa-icon-box:hover {
+  border-color: #c5a059;
+  color: #c5a059;
+}
+
+/* Professional Tailored Buttons (Crisp, clean, identical feel to menu button) */
+.btn-spa-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.85rem;
+  background-color: #4a3728;
+  color: #ffffff;
+  border: 1px solid #4a3728;
+  border-radius: 0px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-spa-primary:hover {
+  background-color: #c5a059;
+  border-color: #c5a059;
+  color: #ffffff;
+}
+
+.btn-spa-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.85rem;
+  background-color: #c5a059;
+  color: #ffffff;
+  border: 1px solid #c5a059;
+  border-radius: 0px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-spa-gold:hover {
+  background-color: #4a3728;
+  border-color: #4a3728;
+  color: #ffffff;
+}
+
+.btn-spa-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.85rem;
+  background-color: #1c1917;
+  color: #ffffff;
+  border: 1px solid #1c1917;
+  border-radius: 0px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-spa-dark:hover {
+  background-color: #4a3728;
+  border-color: #4a3728;
+}
+
+.btn-spa-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.85rem;
+  background-color: transparent;
+  color: #4a3728;
+  border: 1px solid #4a3728;
+  border-radius: 0px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-spa-outline:hover {
+  background-color: #4a3728;
+  color: #fffaf0;
+}
+
+.btn-spa-fresha {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.85rem;
+  background-color: #ffffff;
+  color: #4a3728;
+  border: 1px solid #4a3728;
+  border-radius: 0px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-spa-fresha:hover {
+  background-color: #4a3728;
+  color: #ffffff;
+}
+
+/* Subtle Editorial Gold Dividers */
+.editorial-divider {
+  width: 36px;
+  height: 1px;
+  background-color: #c5a059;
+  margin: 1.25rem 0;
+}
+
+.editorial-divider-center {
+  width: 36px;
+  height: 1px;
+  background-color: #c5a059;
+  margin: 1.25rem auto;
+}
+
+/* Form Inputs - Clean, professional, comfortable */
+input, select, textarea {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #c5a059 !important;
+  box-shadow: 0 0 0 1px #c5a059 !important;
+  outline: none;
+}
+
+/* Smooth Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fffaf0;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6cebf;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
